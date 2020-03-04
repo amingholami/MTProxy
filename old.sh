@@ -451,9 +451,9 @@ else
 		echo "$(tput setaf 3)Warning:$(tput sgr 0) Values more than 16 can cause some problems later. Proceed at your own risk."
 	fi
 	#Secret and config updater
-	read -r -p "Do you want to enable the automatic config updater? I will update \"proxy-secret\" and \"proxy-multi.conf\" each day at midnight(12:00 AM). It's recommended to enable this.[y/n] " -e -i "y" ENABLE_UPDATER
+	read -r -p "Do you want to enable the automatic config updater? I will update \"proxy-secret\" and \"proxy-multi.conf\" each day at midnight(12:00 AM). It's recommended to enable this.[y/n] " -e -i "n" ENABLE_UPDATER
 	#Change host mask
-	read -r -p "Select a host that DPI thinks you are visiting (TLS_DOMAIN). Pass an empty string to disable Fake-TLS. Enabling this option will automaticly disable the 'dd' secrets: " -e -i "mahan.cloud" TLS_DOMAIN
+	read -r -p "Select a host that DPI thinks you are visiting (TLS_DOMAIN). Pass an empty string to disable Fake-TLS. Enabling this option will automaticly disable the 'dd' secrets: " -e -i "virgool.io" TLS_DOMAIN
 	#Other arguments
 	echo "If you want to use custom arguments to run the proxy enter them here; Otherwise just press enter."
 	read -r CUSTOM_ARGS
